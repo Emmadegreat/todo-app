@@ -39,7 +39,7 @@ header{
 }
 button{
     height: 40px;
-    background-color: green;
+    background-color: #3e46d7;
     color: #fff;
     width: 75px;
     border-radius: 0.4rem;
@@ -66,7 +66,7 @@ button{
     background-color: #e82921;
 }
 .item-btn .cross{
-    background-color: #3e46d7;
+    background-color: green;
 }
 .item.active{
 
