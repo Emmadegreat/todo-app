@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.app-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.app{
+    border: 1px solid red;
+    max-width: 500px;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.app input{
+    width: 260px;
+    height: 34px;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+}
+button{
+    height: 40px;
+    background-color: green;
+    color: #fff;
+    width: 75px;
+    border-radius: 0.4rem;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+}
+.tasks{
+    margin: 2rem 0rem;
+    padding: 0rem;
+}
+.item.completed p{
+    text-decoration: line-through;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0.6rem 0rem;
+    font-size: 1.2rem;
+}
+.item-btn .del{
+    background-color: #e82921;
+}
+.item-btn .cross{
+    background-color: #3e46d7;
+}
+.item.active{
+
+}
+#add-list{
+    pointer-events: none;
+    opacity: .6;
+}
+#add-list.active{
+    pointer-events: all;
+    opacity: 1;
+}
+
+/*tags:place the content and format pages
+meta tags:no correct answer
+Default color
+css:Cascading Style Sheets
+someFunctions: returns the addition of two numbers
+javascript: is used to add functionalities to web application
+div.a{text-align:center}
+constant doSomething: error thrown.
+to embed css in a html page: <style>
+to link external css file, we use: <link rel="stylesheet" href="style.css">
+correct way to apply css in html page: all of the mentioned
+correct way of calling javascript code: function/method
+x===y: both are equal in value and data types
+in javascript: division by zero is not an error
+*/

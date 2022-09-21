@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="todo app build with javascript">
     <title>Todo-App</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header>
@@ -14,17 +15,23 @@
 
     <main>
         <section class="app-wrapper">
+            
             <div class="app">
-                <form action="">
-                    <label for="add">Add</label>
-                    <input type="text" name="add-item" id="add">
-                </form>
+                <h2>Todo App</h2><br>
+                <input type="text" name="entered-list" id="add-item">
+                <button id="add-list">Add</button>
+
+                <div class="tasks">
+                    <!--<div class="item">
+                        
+                    </div>-->
+                </div>
             </div>
         </section>
     </main>
     <footer>
 
     </footer>
-    
+    <script src="./app.js"></script>
 </body>
 </html>
