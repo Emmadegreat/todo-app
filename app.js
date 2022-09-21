@@ -1,8 +1,8 @@
 let input = document.getElementById('add-item');
 let form = document.getElementById('myform');
 let btn = document.getElementById('add-list');
-let h1 = document.createElement('h1');
-let tasks = document.querySelector('.tasks');
+let span = document.getElementById('span');
+let tasks = document.getElementById('tasks');
 
 
 input.addEventListener('keyup', () => {
@@ -30,8 +30,8 @@ btn.addEventListener('click', () => {
         tasks.appendChild(newItem);
         input.value = '';
     } else {
-        h1.textContent = 'please enter a task';
-        tasks.appendChild(h1);
+        span.innerHTML = 'Please enter a task';
+        //tasks.appendChild(h1);
     }
 })
 
@@ -49,3 +49,5 @@ tasks.addEventListener('click', (e) => {
     }
 })
 
+let year = document.getElementById('year');
+year.innerHTML = new Date().getFullYear();
