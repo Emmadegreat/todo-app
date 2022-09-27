@@ -18,7 +18,6 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0rem 2rem;
 }
 .app{
     border: 1px solid red;
@@ -50,9 +49,6 @@ button{
     margin: 2rem 0rem;
     padding: 0rem;
 }
-.item.completed p{
-    text-decoration: line-through;
-}
 .item{
     display: flex;
     flex-direction: row;
@@ -62,22 +58,23 @@ button{
     padding: 0.6rem 0rem;
     font-size: 1.2rem;
 }
+.item.completed p{
+    text-decoration: line-through;
+}
+
 .item-btn .del{
     background-color: #e82921;
 }
+
 .item-btn .cross{
     background-color: green;
 }
 .item.active{
 
 }
-#add-list{
-    pointer-events: none;
-    opacity: .6;
-}
-#add-list.active{
+
+#add-item.active{
     pointer-events: all;
-    opacity: 1;
 }
 main{
     padding: 7rem 0rem;
@@ -138,11 +135,12 @@ footer{
     footer{
         display: flex;
         flex-direction: column;
+        font-size: 0.8rem;
     }
-   
+
 }
 @media screen and (max-width:360px) {
-     #add-list{
+     #add-item{
         margin-left: 1rem;
     }
 }

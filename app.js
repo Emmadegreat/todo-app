@@ -1,12 +1,10 @@
-let input = document.getElementById('add-item');
-let form = document.getElementById('myform');
-let btn = document.getElementById('add-list');
+let input = document.getElementById('input-item');
+let btn = document.getElementById('add-item');
 let span = document.getElementById('span');
 let tasks = document.getElementById('tasks');
 
 
 input.addEventListener('keyup', () => {
-    //e.preventDefault();
     if (input.value.trim() != 0) {
         btn.classList.add('active');
     } else {
@@ -21,7 +19,7 @@ btn.addEventListener('click', () => {
         let newItem = document.createElement('div');
         newItem.classList.add('item');
         newItem.innerHTML = `
-        <p>${input.value}</p>
+        <p readonly = "readonly">${input.value}</p>
         <div class="item-btn">
             <button class="cross">&#10004;</button>
             <button class="del">delete</button>
@@ -29,8 +27,10 @@ btn.addEventListener('click', () => {
         `
         tasks.appendChild(newItem);
         input.value = '';
+        span.innerHTML = 'Task added';
     } else {
-        span.innerHTML = 'Please enter a task';
+        span.innerHTML = 'Please enter a task !';
+        span.style.color = 'red'
         //tasks.appendChild(h1);
     }
 })
@@ -48,6 +48,13 @@ tasks.addEventListener('click', (e) => {
         e.target.parentElement.parentElement.classList.toggle('completed');
     }
 })
+
+tasks.addEventListener('click', (e) => {
+    if (e.target.classList.contains('cross')) {
+        e.target.parentElement.parentElement.classList.toggle('completed');
+    }
+})
+
 
 let year = document.getElementById('year');
 year.innerHTML = new Date().getFullYear();
