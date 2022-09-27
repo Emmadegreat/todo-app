@@ -69,9 +69,6 @@ button{
 .item-btn .cross{
     background-color: green;
 }
-.item.active{
-
-}
 
 #add-item.active{
     pointer-events: all;
